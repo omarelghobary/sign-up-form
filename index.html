@@ -10,7 +10,7 @@
 <body>
 
     <main id="container">
-        <div class="logo-container">
+        <div class="left-container">
             <img class="background-image" src="images/girl-takes-photo.jpg" alt="girl takes photo">
             <div class="logo">
                 <img class="camera-logo" src="images/camera-lens-logo.png" alt="orange lego">
@@ -23,7 +23,7 @@
             </div>
             <div class="background-shadow"></div>
         </div>
-        <div class="form-container">
+        <div class="right-container">
             <div class="discription">
                 <p>This is not a real online service! you know you need something <br>
                     like this in your life to help you realize your deepest dreams. <br>
@@ -33,34 +33,44 @@
                     You know you want to.
                 </p>
             </div>
-            <div class="form">
-                <h2>Let's do this!</h2>
+            <div class="form-container">
+                <div class="title">Let's do it!</div>
                 <form action="http://httpbin.org/post" method="post" class="user-form">
-                <div class="user-name"></div>
-                <label for="first-name">FIRST NAME</label>
-                <input type="text" name="firstName" id="first-name">
-                <label for="last-name">LAST NAME</label>
-                <input type="text" name="lastName" id="last-name">
-                <br>
-                <div class="user-contact">
-                <label for="email">EMAIL</label>
-                <input type="email" name="email" id="email">
-                <label for="phone-number">PHONE NUMBER</label>
-                <input type="tel" name="phoneNumber" id="phone-number">
-                </div>
-                <br>
-                <div class="user-password">
-                <label for="password">PASSWORD</label>
-                <input type="password" name="userPassword" id="password">
-                <label for="confirm-password">CONFIRM PASSWORD</label>
-                <input type="password" name="passwordConfirm" id="confirm-password">
-                </div>
-                <br>
-                <div class="button">
-                <button type="submit">Create Account</button>
-                <br>
-                <a href="">Already have an account?Log in</a>
-                </div>
+                 <section>
+                  <div class="user-details">
+                     <div class="input-box">
+                         <label for="first-name" class="details">First Name</label>
+                         <input type="text" name="first-name" id="first-name" placeholder="Enter your first Name" required>
+                     </div>
+                     <div class="input-box">
+                        <label for="first-name" class="details">Last Name</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Enter your last Name" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="first-name" class="details">Email</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="first-name" class="details">Phone Number</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Enter your number" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="first-name" class="details">Password</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Enter your password" required>
+                    </div>
+                    <div class="input-box">
+                        <label for="first-name" class="details">Confirm Password</label>
+                        <input type="text" name="first-name" id="first-name" placeholder="Confirm your password" required>
+                    </div>
+                 </section>
+                     
+                     <div class="button">
+                     <button type="submit">Create Account</button>
+                     <div class="login">
+                     <p>Already have an account?</p><a href="">Log in</a>
+                    </div>
+                     </div>
+                  </div>
                 </form>
             </div>
         </div>

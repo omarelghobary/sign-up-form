@@ -1,3 +1,53 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* ------------------- */
 *{
     padding: 0;
     margin: 0;
@@ -11,9 +61,13 @@ main{
 }
 
 .background-image{
-    width:100%;
+    width: 35vw;
     height: 100%;
     object-fit: cover;
+}
+
+.right-container{
+    flex-grow: 1;
 }
 
 .logo .camera-logo{
@@ -24,19 +78,84 @@ main{
     width: 6%;
     z-index: 1;   
 }
-div.form-container{
-    flex-grow: 1;
-    height: 100vh;
-}
 
 .discription{
     background-color: rgb(240, 241, 240);
 }
 .discription p{
-    padding: 150px 150px 30px 150px ;
+    padding: 100px 100px 30px 150px ;
     font-size: 1.3rem;
     font-weight: bold;
 }
+
+
+.form-container .title{
+    background-color: black;
+    color: white;
+}
+
+section{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height: 40vh;
+    padding: 50px;
+    background: linear-gradient(90deg, rgba(122, 112, 111, 0.133), rgba(10, 35, 42, 0.267));
+
+}
+
+section .user-details{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    background-color: white;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+section .user-details .input-box{
+    width: 279px;
+    margin-bottom: 10px;
+
+
+}
+
+.user-details .input-box .details{
+    font-weight: 500;
+    margin-bottom: 5px;
+}
+
+.user-details .input-box input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 15px;
+    font-size: 1rem;
+
+}
+
+.form-container .button{
+    margin: 30px 0 20px 50px;
+    padding: 10px 2px; 
+}
+
+.button .login{
+    display: flex;
+}
+
+button{
+    padding: 10px 40px;
+    background: linear-gradient(90deg, #FDB777, #FF6200);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+
+
+
 
 
 
