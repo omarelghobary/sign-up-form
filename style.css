@@ -59,28 +59,42 @@ table {
 main{
     font-family: 'Poppins', sans-serif;
    height: 100vh;
+   width: 100vw;
    display: flex ;
-   
-   
+     
 }
 
-.background-image{
-    width: 35vw;
-    height: 100%;
-    object-fit: cover;
+.picture{
+    background-image: url(images/girl-takes-photo.jpg);
+    background-position: center;
+    background-size: 40rem;
+    background-repeat: no-repeat;
+    width: 80vw;
 }
 
-.right-container{
-    flex-grow: 1;
+.logo .logo-container{
+    background-color: rgba(0, 0, 0, 50%);
+    margin-top: 100px;
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
 }
 
-.logo .camera-logo{
-    position: absolute;
-    top: 50px;
-    left:30px;
-    object-fit: cover;
-    width: 6%;
-    z-index: 1;   
+h1{
+    align-self: center;
+    color: white;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+.logo .credentials{
+    height: 63vh;
+    display: flex;
+    color: white;
+    align-items: flex-end;
+    justify-content: center;
+
 }
 
 .discription{
